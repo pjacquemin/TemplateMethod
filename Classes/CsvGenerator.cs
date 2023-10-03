@@ -28,7 +28,9 @@ namespace Classes
             dynamic record = new ExpandoObject();
 
             record.CustomerName = currentProcessedData.CustomerName;
-            record.TotalYearResults = (currentProcessedData.FirstQuarterVolume + currentProcessedData.SecondQuarterVolume + currentProcessedData.ThirdQuarterVolume) * currentProcessedData.UnitPrice;
+
+            int yearVolume = currentProcessedData.FirstQuarterVolume + currentProcessedData.SecondQuarterVolume + currentProcessedData.ThirdQuarterVolume;
+            record.TotalYearResults = yearVolume * currentProcessedData.UnitPrice;
 
             records.Add(record);
         }
