@@ -25,8 +25,8 @@ namespace Classes
             record.FirstQuarterVolume = currentProcessedData.FirstQuarterVolume;
             record.SecondQuarterVolume = currentProcessedData.SecondQuarterVolume;
             record.ThirdQuarterVolume = currentProcessedData.ThirdQuarterVolume;
-            record.UnitPrice = currentProcessedData.UnitPrice;
-            record.TotalYearResults = (currentProcessedData.FirstQuarterVolume + currentProcessedData.SecondQuarterVolume + currentProcessedData.ThirdQuarterVolume) * currentProcessedData.UnitPrice;
+            int yearVolume = currentProcessedData.FirstQuarterVolume + currentProcessedData.SecondQuarterVolume + currentProcessedData.ThirdQuarterVolume;
+            record.TotalYearResults = yearVolume * currentProcessedData.UnitPrice;
 
             records.Add(record);
         }
