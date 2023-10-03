@@ -10,7 +10,7 @@ namespace Classes
         protected PdfDocument pdf { get; set; }
         protected string html { get; set; }
 
-        public PDFGenerator(IEnumerable<Data> datas) : base(datas) { }
+        public PDFGenerator(IEnumerable<Data> data) : base(data) { }
 
         protected override void DoInitFile()
         {

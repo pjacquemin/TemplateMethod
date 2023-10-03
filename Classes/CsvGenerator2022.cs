@@ -6,7 +6,7 @@ namespace Classes
 {
     public class CsvGenerator2022 : CsvGenerator
     {
-        public CsvGenerator2022(IEnumerable<Data> datas) : base(datas)
+        public CsvGenerator2022(IEnumerable<Data> data) : base(data)
         {
 
         }

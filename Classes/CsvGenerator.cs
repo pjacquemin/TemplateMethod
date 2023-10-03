@@ -12,7 +12,7 @@ namespace Classes
         protected StreamWriter writer { get; set; }
         protected List<dynamic> records { get; set; }
 
-        public CsvGenerator(IEnumerable<Data> datas) : base(datas) 
+        public CsvGenerator(IEnumerable<Data> data) : base(data) 
         {
             records = new List<dynamic>();
         }
